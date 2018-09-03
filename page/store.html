@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>门店</title>
+  <link rel="stylesheet" href="../layui/css/layui.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="main">
+  <div class="layui-form">
+    <div class="layui-form-item">
+      <div class="layui-inline">
+        <label class="layui-form-label">中心</label>
+        <div class="layui-input-inline">
+          <input type="text" class="layui-input" id="trade_name" placeholder="请输入中心">
+        </div>
+      </div>
+      <div class="layui-inline">
+        <label class="layui-form-label">门店</label>
+        <div class="layui-input-inline">
+          <input type="text" class="layui-input" id="mendian_name" placeholder="请输入门店">
+        </div>
+      </div>
+      <div class="layui-inline">
+        <label class="layui-form-label">网格小微名称</label>
+        <div class="layui-input-inline">
+          <input type="text" class="layui-input" id="grid_micro_name" placeholder="请输入网格小微名称">
+        </div>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-inline">
+        <label class="layui-form-label">日期</label>
+        <div class="layui-input-inline">
+          <input type="text" class="layui-input" id="dateDtKpi" placeholder="请选择日期" lay-key="1" readonly>
+        </div>
+      </div>
+      <div class="layui-inline">
+        <label class="layui-form-label">五星评级</label>
+        <div class="layui-input-inline">
+          <select name="modules" lay-search="">
+            <option value="">直接选择或搜索选择</option>
+            <option value="1">一星</option>
+            <option value="2">二星</option>
+            <option value="3">三星</option>
+            <option value="4">四星</option>
+            <option value="5">五星</option>
+          </select>
+        </div>
+      </div>
+      <div class="layui-inline">
+        <div class="layui-input-inline">
+          <button type="button" class="layui-btn layui-btn-normal" id="searchBtn">查询</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table-main1">
+    <div class="layui-table" id="storeList" lay-filter="test"></div>
+    <div id="storePage"></div>
+  </div>
+</div>
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/store.js"></script>
+</body>
+</html>

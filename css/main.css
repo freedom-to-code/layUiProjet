@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 10px;
+}
+
+.table-main {
+  width: 100%;
+  overflow: auto;
+}
+
+/*reset*/
+.layui-form-label {
+  width: auto;
+  min-width: 80px;
+}
+.layui-form-label{
+  padding-left: 9px;
+  padding-right: 9px;
+}
+/*reset end*/

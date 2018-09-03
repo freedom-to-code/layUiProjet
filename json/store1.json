@@ -1,0 +1,192 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "id": 10000,
+      "username": "张三",
+      "sex": "女",
+      "city": "城市-0",
+      "sign": "签名-0",
+      "experience": 255,
+      "logins": 24,
+      "wealth": 82830700,
+      "classify": "作家",
+      "score": 57
+    },
+    {
+      "id": 10001,
+      "username": "李四",
+      "sex": "男",
+      "city": "城市-1",
+      "sign": "签名-1",
+      "experience": 256,
+      "logins": 28,
+      "wealth": 82830700,
+      "classify": "工人",
+      "score": 57
+    }
+  ]
+}
+
+{
+  "scy_mendian_01": {
+    "mendian_name": [
+      "曲阳县惠农家电有限公司",
+      "山西苏宁兴华店",
+      "苏宁易购临汾襄汾服务站",
+      "柳林县嘉泰鑫商贸有限责任公司",
+      "太原市鑫元商贸有限公司",
+      "运城经济开发区盼盼装饰广场(禹都店)",
+      "苏宁邢台中兴西大街店",
+      "藁城易购服务站",
+      "辛集市兴华百货大楼",
+      "安国市盛大家电药市街门店"
+    ],
+    "fenji": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "sfyms": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "anzhuang_no": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "grid_micro_name": [
+      "唐县经营体",
+      "太原南经营体",
+      "临汾市区经营体",
+      "吕梁南经营体",
+      "太原北经营体",
+      "运城市区经营体",
+      "邢台市经营体",
+      "石家庄周边经营体",
+      "晋州经营体",
+      "定州经营体"
+    ],
+    "trade_name": [
+      "石家庄",
+      "太原",
+      "太原",
+      "太原",
+      "太原",
+      "太原",
+      "石家庄",
+      "石家庄",
+      "石家庄",
+      "石家庄"
+    ],
+    "ruzhuxiaoqu": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "yj_shr_sj": [
+      1636.75,
+      6638.18,
+      569.52,
+      2618.8,
+      3576.65,
+      0.0,
+      1144.16,
+      0.0,
+      1309.4,
+      1139.32
+    ],
+    "moshi_content": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mendian_code": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "chuyang_no": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "xiaoshou_no": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "sheji_no": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+}
