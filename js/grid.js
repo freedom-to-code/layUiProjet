@@ -23,14 +23,13 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
     var page = pageNum || location.hash.replace('#!page=', '') || 1;
     var date = new Date(new Date().getTime() - 3600 * 24 * 1000);
     var preDay = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).substr(-2) + '-' + ('0' + date.getDate()).substr(-2);
-    var url = 'http://10.138.42.215:19805/common/inter?fresh=1&dataType=scy_mendian_mx_01&dateDtKpi=' + ($('#dateDtKpi').val() || preDay) + '&params=';
+    var url = 'http://10.138.42.215:19805/common/inter?fresh=1&dataType=scy_wangge_mx_01&dateDtKpi=' + ($('#dateDtKpi').val() || preDay) + '&params=';
     url += 'page::' + page + ';;';
     url += 'trade_name::' + $('#trade_name').val() + ';;';//中心
-    url += 'mendian_name::' + $('#mendian_name').val() + ';;';//门店名称
     url += 'grid_micro_name::' + $('#grid_micro_name').val() + ';;';//小微名称
-    url += 'fenji::' + ($('#fenji').val() || '') + '';//分级
+    url += 'wangge_wuxingfenji::' + ($('#fenji').val() || '') + '';//分级
     Common.sendFormData(
-      //'../json/store.json',
+      //'../json/grid.json',
       url,
       {},
       function (data) {
@@ -48,28 +47,26 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
         }
 
         table.render({
-          elem: '#storeList',
+          elem: '#gridList',
           width: 1400,
           height: 500,
           data: newData,
-          title: '用户表',
+          title: '网格表',
           page: false, //开启分页
           request: {
             pageName: 'page'
           },
-          //, toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
-          //totalRow: true,//开启合计行
           cols: [
             [ //表头
               //{field: 'mendian_code', title: 'ID', width: 80, sort: false, fixed: 'left'},
               {
                 field: 'mendian_code',
-                title: '门店编码',
+                title: '网格小微编码',
                 rowspan: 2,
               },
               {
                 field: 'mendian_name',
-                title: '门店名称',
+                title: '网格小微名称',
                 rowspan: 2,
               },
               {
@@ -79,36 +76,23 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
               },
               {
                 field: 'grid_micro_name',
-                title: '网格小微名称',
+                title: '零售',
                 rowspan: 2,
               },
-              /*{
-                field: 'yj_shr_sj',
-                title: '门店种类',
-                rowspan: 2,
-              },*/
               {
                 field: 'yj_shr_sj',
-                title: '月均零售',
-                rowspan: 2,
+                title: '网点',
+                colspan: 2,
+                align: 'center'
               },
               {
                 field: 'chuyang_no',
-                title: '产品出样',
-                rowspan: 2,
-              },
-              {
-                title: '交互能力',
+                title: '触点',
                 colspan: 2,
                 align: 'center'
               },
               {
-                title: '全屋能力',
-                colspan: 2,
-                align: 'center'
-              },
-              {
-                title: '模式输出',
+                title: '亮点',
                 colspan: 2,
                 align: 'center'
               },
@@ -121,33 +105,33 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
             [
               {
                 field: 'xiaoshou_no',
-                title: '销售团队',
+                title: '网点个数',
               },
               {
                 field: 'ruzhuxiaoqu',
-                title: '入住小区',
+                title: '覆盖率',
               },
               {
                 field: 'sheji_no',
-                title: '设计团队',
+                title: '触点个数',
               },
               {
                 field: 'anzhuang_no',
-                title: '安装团队',
+                title: '触点占比',
               },
               {
                 field: 'sfyms',
-                title: '是否有模式',
+                title: '亮点个数',
               },
               {
                 field: 'moshi_content',
-                title: '模式内容',
+                title: '亮点占比',
               },
             ]
           ]
         });
         laypage.render({
-          elem: 'storePage',//元素ID
+          elem: 'gridPage',//元素ID
           count: data['scy_mendian_count']['jilushu'][0],//数据总数
           limit: 10,
           groups: 10,
@@ -160,8 +144,7 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
           }
         });
       }
-    )
-    ;
+    );
   };
   //上来便请求数据
   getData();
