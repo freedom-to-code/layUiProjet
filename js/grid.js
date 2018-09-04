@@ -96,7 +96,7 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
                 align: 'center'
               },
               {
-                field: 'wangge_wuxingfenji ',
+                field: 'wangge_wuxingfenji',
                 title: '五星评级',
                 rowspan: 2,
               },
