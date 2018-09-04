@@ -60,12 +60,12 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
             [ //表头
               //{field: 'mendian_code', title: 'ID', width: 80, sort: false, fixed: 'left'},
               {
-                field: 'mendian_code',
+                field: 'grid_micro_code',
                 title: '网格小微编码',
                 rowspan: 2,
               },
               {
-                field: 'mendian_name',
+                field: 'grid_micro_name',
                 title: '网格小微名称',
                 rowspan: 2,
               },
@@ -75,12 +75,11 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
                 rowspan: 2,
               },
               {
-                field: 'grid_micro_name',
+                field: 'yj_shr_sj_sum',
                 title: '零售',
                 rowspan: 2,
               },
               {
-                field: 'yj_shr_sj',
                 title: '网点',
                 colspan: 2,
                 align: 'center'
@@ -97,34 +96,34 @@ layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'elemen
                 align: 'center'
               },
               {
-                field: 'fenji',
+                field: 'wangge_wuxingfenji ',
                 title: '五星评级',
                 rowspan: 2,
               },
             ],
             [
               {
-                field: 'xiaoshou_no',
+                field: 'wd_no',
                 title: '网点个数',
               },
               {
-                field: 'ruzhuxiaoqu',
+                field: 'fgl',
                 title: '覆盖率',
               },
               {
-                field: 'sheji_no',
+                field: 'cd_no',
                 title: '触点个数',
               },
               {
-                field: 'anzhuang_no',
+                field: 'cdzb',
                 title: '触点占比',
               },
               {
-                field: 'sfyms',
+                field: 'ld_no',
                 title: '亮点个数',
               },
               {
-                field: 'moshi_content',
+                field: 'ldzb',
                 title: '亮点占比',
               },
             ]
